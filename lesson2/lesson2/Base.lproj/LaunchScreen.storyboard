@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="q7x-js-XuC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lt-cd-KZV" userLabel="First Button">
+                                <rect key="frame" x="65" y="492" width="285" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Y4g-e8-ae6"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-o0-6uB" userLabel="second Button">
+                                <rect key="frame" x="65" y="578" width="285" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EhX-xn-pZe"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Google" backgroundImage="Google">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra1-8t-mMA">
+                                <rect key="frame" x="65" y="657" width="285" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I2W-D5-8Fd"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with email " backgroundImage="Email">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="social  squid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anB-Sd-i5y">
+                                <rect key="frame" x="133" y="247.5" width="148" height="131.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygz-Z2-tyv">
+                                <rect key="frame" x="85" y="387" width="234" height="118"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q7x-js-XuC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="44" id="1pJ-BS-owC"/>
+                            <constraint firstItem="q7x-js-XuC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8OM-c2-5gf"/>
+                            <constraint firstItem="5Lt-cd-KZV" firstAttribute="top" secondItem="ygz-Z2-tyv" secondAttribute="bottom" constant="8" symbolic="YES" id="A3C-xS-ta0"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="centerX" secondItem="5Lt-cd-KZV" secondAttribute="centerX" id="AQk-i4-ulI"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="top" secondItem="anB-Sd-i5y" secondAttribute="bottom" constant="10" id="DaR-9r-6fY"/>
+                            <constraint firstItem="LEU-o0-6uB" firstAttribute="top" secondItem="5Lt-cd-KZV" secondAttribute="bottom" constant="46" id="HQY-Ya-uEX"/>
+                            <constraint firstItem="LEU-o0-6uB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LYL-Gw-wxA"/>
+                            <constraint firstItem="ra1-8t-mMA" firstAttribute="top" secondItem="LEU-o0-6uB" secondAttribute="bottom" constant="10" id="NKX-DD-iTa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ra1-8t-mMA" secondAttribute="bottom" constant="219" id="Nqc-rX-I5y"/>
+                            <constraint firstItem="5Lt-cd-KZV" firstAttribute="trailing" secondItem="ra1-8t-mMA" secondAttribute="trailing" id="P0o-9p-rYZ"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="RLR-gu-olv"/>
+                            <constraint firstItem="5Lt-cd-KZV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RXv-Ln-kUa"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U71-d8-t8a"/>
+                            <constraint firstItem="5Lt-cd-KZV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V2g-UB-156"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="X6z-uj-OPq"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ahQ-qI-jOx"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="top" secondItem="q7x-js-XuC" secondAttribute="bottom" id="ait-f2-PQe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7x-js-XuC" secondAttribute="trailing" id="cDE-o3-J4f"/>
+                            <constraint firstItem="q7x-js-XuC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ds6-9A-1sG"/>
+                            <constraint firstItem="anB-Sd-i5y" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ewe-ZE-qtq"/>
+                            <constraint firstItem="ygz-Z2-tyv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gVB-nb-GDg"/>
+                            <constraint firstItem="5Lt-cd-KZV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jT7-yR-gUp"/>
+                            <constraint firstItem="LEU-o0-6uB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wFn-ch-VuS"/>
+                            <constraint firstItem="q7x-js-XuC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="44" id="x6M-JP-pI7"/>
+                            <constraint firstItem="ra1-8t-mMA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yru-I7-nGV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
